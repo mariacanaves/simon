@@ -9,44 +9,44 @@
     <script src="script.js"></script>
 </head>
 <body>
-
+<!--colors-->
 <div class="panell">
     <div class="header">Títol</div>
     <div class="memory-next" id="notification">
     </div>
     <div class="memory-game">
         <div class="row">
-            <button class="card color1" id="bColor1"></button>
-            <button class="card color2"></button>
-            <button class="card color3"></button>
-            <button class="card color4"></button>
+            <button class="card color1" id="bColor1" onclick="mirarcolor(colors[0])"></button>
+            <button class="card color2" id="bColor2" onclick="mirarcolor(colors[1])"></button>
+            <button class="card color3" id="bColor3" onclick="mirarcolor(colors[2])"></button>
+            <button class="card color4" id="bColor4" onclick="mirarcolor(colors[3])"></button>
         </div>
         <div class="row">
-            <button class="card color5"></button>
-            <button class="card color6"></button>
-            <button class="card color7"></button>
-            <button class="card color8"></button>
+            <button class="card color5" id="bColor5" onclick="mirarcolor(colors[4])"></button>
+            <button class="card color6" id="bColor6" onclick="mirarcolor(colors[5])"></button>
+            <button class="card color7" id="bColor7" onclick="mirarcolor(colors[6])"></button>
+            <button class="card color8" id="bColor8" onclick="mirarcolor(colors[7])"></button>
         </div>
         <div class="row">
-            <button class="card color9"></button>
-            <button class="card color10"></button>
-            <button class="card color11"></button>
-            <button class="card color12"></button>
+            <button class="card color9" id="bColor9" onclick="mirarcolor(colors[8])"></button>
+            <button class="card color10" id="bColor10" onclick="mirarcolor(colors[9])"></button>
+            <button class="card color11" id="bColor11" onclick="mirarcolor(colors[10])"></button>
+            <button class="card color12" id="bColor12" onclick="mirarcolor(colors[11])"></button>
         </div>
         <div class="row">
-            <button class="card color13"></button>
-            <button class="card color14"></button>
-            <button class="card color15"></button>
-            <button class="card color16"></button>
+            <button class="card color13" id="bColor13" onclick="mirarcolor(colors[12])"></button>
+            <button class="card color14" id="bColor14" onclick="mirarcolor(colors[13])"></button>
+            <button class="card color15" id="bColor15" onclick="mirarcolor(colors[14])"></button>
+            <button class="card color16" id="bColor16" onclick="mirarcolor(colors[15])"></button>
         </div>
 
     </div>
     <div class="memory-message" id="message">
         Missatge
     </div>
-
+<!--Start-->
     <div class="buttons">
-        <button class="button-3" role="button"  onclick="showNotification('#b2b2b2')">Començar</button>
+        <button class="button-3" role="button"  onclick="iniciarPartida()">Començar</button>
     </div>
 
 
