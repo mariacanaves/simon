@@ -80,31 +80,31 @@ body {
 
 /* Colores pastel */
 .color1 {
-    background-color: #b2e2f2;
+    background-color: #f5f5dc;
 }
 .color2 {
-    background-color: #c5c6c8;
+    background-color: #fdfd96;
 }
 .color3 {
     background-color: #d8bfd8;
 }
 .color4 {
-    background-color: #ffda9e;
+    background-color: #e00000;
 }
 .color5 {
     background-color: #ffbf80;
 }
 .color6 {
-    background-color: #b0f2c2;
+    background-color: #836953;
 }
 .color7 {
-    background-color: #aaff80;
+    background-color: #366959;
 }
 .color8 {
     background-color: #96ffe0;
 }
 .color9 {
-    background-color: #ff9cf0;
+    background-color: #2b064d;
 }
 .color10 {
     background-color: #d1c2ff;
@@ -150,3 +150,41 @@ body {
      }
 
  }
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
