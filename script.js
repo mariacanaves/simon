@@ -5,18 +5,20 @@ let posiciollista=0
 let nivell=0
 let temps=2000
 // Config slider
-let slider = document.getElementById("myRange");
+let slider = parseInt(document.getElementById("myRange"));
 let output = document.getElementById("demo");
 output.innerHTML = slider.value; // Display the default slider value
 // Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-    output.innerHTML = this.value;
-    temps=this.value
-    console.log('Temps: '+temps)
-}
+// slider.oninit = function() {
+//     output.innerHTML = this.value;
+//     temps=this.value
+//     console.log('Temps: '+temps)
+// }
 
 // Inici de la partida(crear el color
 function iniciarPartida(){
+    llista = []
+    console.log(llista)
     llista.push(colors[Math.trunc(Math.random()*colors.length)])
     console.log(llista)
     showNotification(llista[llista.length-1])
@@ -32,14 +34,14 @@ function showNotification(message) {
     // temps del color
     setTimeout(function() {
         notification.style.display = 'none';
-    }, document.getElementById("myRange").value);
+    }, parseInt(document.getElementById("myRange").value));
 }
 
 function mirarcolor(color){
 console.log(color + "-" + llista[posiciollista])
     // mira si el color esta be
-    if(color==llista[posiciollista]){
-        if(posiciollista==llista.length-1){
+    if(color===llista[posiciollista]){
+        if(posiciollista===llista.length-1){
             llista.push(colors[Math.trunc(Math.random()*colors.length)])
             posiciollista=0
             showNotification(llista[llista.length-1])
@@ -51,7 +53,7 @@ console.log(color + "-" + llista[posiciollista])
             posiciollista++
         }
     }
-    // si perds t'ho diu
+    // si perds t'ho diu i reinicia tot
     else{
         window.alert('Has perdut :c')
         nivell=0

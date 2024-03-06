@@ -152,6 +152,8 @@ body {
  }
 .slidecontainer {
     width: 100%; /* Width of the outside container */
+    grid-column: 3;
+    grid-row: 2;
 }
 
 /* The slider itself */
