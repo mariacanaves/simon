@@ -47,7 +47,6 @@ console.log(color + "-" + llista[posiciollista])
             showNotification(llista[llista.length-1])
             nivell++
             document.getElementById('intents').innerHTML='Nivell: ' +nivell
-
         }
         else{
             posiciollista++
