@@ -37,6 +37,7 @@ function showNotification(message) {
     }, parseInt(document.getElementById("myRange").value));
 }
 
+
 function mirarcolor(color){
 console.log(color + "-" + llista[posiciollista])
     // mira si el color esta be
